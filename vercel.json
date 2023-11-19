@@ -1,0 +1,28 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "index.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/auth/(.*)",
+        "dest": "/auth/$1"
+      },
+      {
+        "src": "/message/(.*)",
+        "dest": "/message/$1"
+      },
+      {
+        "src": "/comment/(.*)",
+        "dest": "/comment/$1"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/$1"
+      }
+    ]
+  }
+  
