@@ -8,20 +8,8 @@
     ],
     "routes": [
       {
-        "src": "/auth/(.*)",
-        "dest": "/auth/$1"
-      },
-      {
-        "src": "/message/(.*)",
-        "dest": "/message/$1"
-      },
-      {
-        "src": "/comment/(.*)",
-        "dest": "/comment/$1"
-      },
-      {
         "src": "/(.*)",
-        "dest": "/$1"
+        "dest": "index.js"
       }
     ]
   }
